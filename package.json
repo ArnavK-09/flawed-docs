@@ -1,0 +1,23 @@
+{
+  "name": "flawed-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnavK-09/flawed-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnavK-09/flawed-docs/issues"
+  },
+  "homepage": "https://github.com/ArnavK-09/flawed-docs#readme",
+  "dependencies": {
+    "@arnavk-09/flawed": "^1.0.1"
+  }
+}
