@@ -18,14 +18,19 @@
               <br><br>
                 <div class="docsTOC">
                 
-                <details>
+                <details open>
                     <summary>Table Of Contents</summary>
 
                     <br>
                     <h5>Classes</h5>
-                    <a class="active" href="#home">FlawedClient</a>
-                    <a href="#news">FlawedScreen</a>
+                    <a class="active" href="#FlawedClient">FlawedClient</a>
+                    <a href="#FlawedScreen">FlawedScreen</a>
+                    <a href="#FlawedComponent">FlawedComponent</a>
+                    <a href="#FlawedHead">FlawedHead</a>
 
+                    <hr>
+                    <h5>Functions</h5>
+                    <a class="active" href="#UseComponent">UseComponent</a>
                     <hr>
 
                     <h5>Guide</h5>

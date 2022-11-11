@@ -6,7 +6,7 @@ const DocsLanding = require('./screens/DocsLanding');
 const Navbar = require('./components/Navbar');
 const Hero = require('./components/Hero');
 const DocsTOC = require('./components/DocsTOC');
-
+const ClassPreview = require('./components/ClassPreview');
 // Init Flawed App 
 const app = new FlawedClient({
     port: 3000
@@ -19,7 +19,7 @@ app.setScreens([new MainScreen(), new DocsLanding()]);
 app.setHead(new MetaHead());
 
 // Register Components 
-app.registerComponents([new Navbar(), new Hero(), new DocsTOC()]);
+app.registerComponents([new Navbar(), new Hero(), new DocsTOC(), new ClassPreview()]);
 
 // Setup 404 Page 
 app.set404Content(`404 Page!`);

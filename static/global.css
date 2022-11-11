@@ -9,17 +9,29 @@
     margin: 20px;
 }
 
-.docs a {
+.docsTOC a {
     display: block;
     padding: 10px;
+    color: black;
 }
-.docs a:hover:not(.active) {
+.docsTOC a:hover:not(.active) {
     background-color: rgba(85, 85, 85, 0.404);
     color: black;
     padding: 10px;
   }
    
-.docs a.active {
+.docsTOC a.active {
     background-color: black;
     color: white;
   }
+
+
+.classTableData a {
+    color: gray;
+    text-decoration: none;
+}
+
+.classTableData a:hover {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+}
