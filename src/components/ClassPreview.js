@@ -1,36 +1,48 @@
-
-// imports 
+// imports
 const { FlawedComponent } = require("@arnavk-09/flawed");
 
-// Hero Component 
+// Hero Component
 class ClassPreview extends FlawedComponent {
-    // Giving Name To Component
-    constructor() {
-        super({
-            name: 'ClassPreview'
-        });
-    };
+  // Giving Name To Component
+  constructor() {
+    super({
+      name: "ClassPreview",
+    });
+  }
 
-    // Component Content 
-    view(props) {
-        // adding params to table
-        let paramsContent = '';
-        let p_i = 0;
-        while(p_i < props.params.length) {
-            paramsContent  = `${paramsContent}\n<tr><td>${props.params[p_i].name.toString()}</td><td>${props.params[p_i].type.toString()}</td><td>${props.params[p_i].required.toString()}</td><td>${props.params[p_i].description}</td></tr>\n`; 
-            p_i++;
-        }
+  // Component Content
+  view(props) {
+    // adding params to table
+    let paramsContent = "";
+    let p_i = 0;
+    while (p_i < props.params.length) {
+      paramsContent = `${paramsContent}\n<tr><td>${props.params[
+        p_i
+      ].name.toString()}</td><td>${props.params[
+        p_i
+      ].type.toString()}</td><td>${props.params[
+        p_i
+      ].required.toString()}</td><td>${
+        props.params[p_i].description
+      }</td></tr>\n`;
+      p_i++;
+    }
 
-        // adding functions to table
-        let funcContent = '';
-        let f_i = 0;
-        while(f_i < props.functions.length) {
-            funcContent  = `${funcContent}\n<tr><td>${props.functions[f_i].name.toString()}</td><td>${props.functions[f_i].params.toString()}</td><td>${props.functions[f_i].description.toString()}</td></tr>\n`; 
-            f_i++;
-        }
+    // adding functions to table
+    let funcContent = "";
+    let f_i = 0;
+    while (f_i < props.functions.length) {
+      funcContent = `${funcContent}\n<tr><td>${props.functions[
+        f_i
+      ].name.toString()}</td><td>${props.functions[
+        f_i
+      ].params.toString()}</td><td>${props.functions[
+        f_i
+      ].description.toString()}</td></tr>\n`;
+      f_i++;
+    }
 
-        return (
-            `
+    return `
             <div>
                 <!-- Title -->
                 <a style="color: black; text-decoration: underline;" href="https://github.com/ArnavK-09/flawed/blob/main/src/FlawedClient.ts" target="_blank">
@@ -79,10 +91,9 @@ class ClassPreview extends FlawedComponent {
             </div>
             </div>
             <hr>
-              `
-        );
-    };
-};
+              `;
+  }
+}
 
-// exporting 
+// exporting
 module.exports = ClassPreview;

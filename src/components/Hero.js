@@ -1,20 +1,18 @@
-
-  // imports 
+// imports
 const { FlawedComponent } = require("@arnavk-09/flawed");
 
-// Hero Component 
+// Hero Component
 class Hero extends FlawedComponent {
-    // Giving Name To Component
-    constructor() {
-        super({
-            name: 'Hero'
-        });
-    };
+  // Giving Name To Component
+  constructor() {
+    super({
+      name: "Hero",
+    });
+  }
 
-    // Component Content 
-    view() {
-        return (
-            `
+  // Component Content
+  view() {
+    return `
             <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div class="col-10 col-sm-8 col-lg-6">
@@ -30,10 +28,9 @@ class Hero extends FlawedComponent {
               </div>
             </div>
           </div>
-            `
-        );
-    };
-};
+            `;
+  }
+}
 
-// exporting 
+// exporting
 module.exports = Hero;

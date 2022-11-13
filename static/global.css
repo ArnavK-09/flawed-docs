@@ -14,16 +14,17 @@
     padding: 10px;
     color: black;
 }
+
 .docsTOC a:hover:not(.active) {
     background-color: rgba(85, 85, 85, 0.404);
     color: black;
     padding: 10px;
-  }
-   
+}
+
 .docsTOC a.active {
     background-color: black;
     color: white;
-  }
+}
 
 
 .classTableData a {

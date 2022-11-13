@@ -1,24 +1,23 @@
-// imports 
+// imports
 const { FlawedComponent } = require("@arnavk-09/flawed");
 
-// Nav Bar Component 
+// Nav Bar Component
 class Navbar extends FlawedComponent {
-    // Giving Name To Component
-    constructor() {
-        super({
-            name: 'Navbar'
-        });
-    };
+  // Giving Name To Component
+  constructor() {
+    super({
+      name: "Navbar",
+    });
+  }
 
-    // Component Content 
-    view() {
-        return (
-            `
+  // Component Content
+  view() {
+    return `
             <header>
             <nav class="navbar navbar-dark navbar-expand-sm bg-dark fixed-top">
             <div class="container">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <img src="/favicon.png" alt="Logo" width="36" height="36" class="d-inline-block align-text-top">
               Flawed
             </a>
@@ -42,12 +41,12 @@ class Navbar extends FlawedComponent {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link active">
-                        Report A Bug
+                    <a href="https://github.com/ArnavK-09/flawed/issues" target="_blank" class="nav-link active">
+                        Report
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link active">
+                    <a href="https://github.com/ArnavK-09/flawed" target="_blank" class="nav-link active">
                         Github
                     </a>
                 </li>
@@ -56,10 +55,9 @@ class Navbar extends FlawedComponent {
             </nav>
             </header>
             <br> 
-            `
-        );
-    };
-};
+            `;
+  }
+}
 
-// exporting 
+// exporting
 module.exports = Navbar;

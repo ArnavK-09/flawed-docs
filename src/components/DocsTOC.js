@@ -1,20 +1,18 @@
+// imports
+const { FlawedComponent } = require("@arnavk-09/flawed");
 
-  // imports 
-  const { FlawedComponent } = require("@arnavk-09/flawed");
+// Hero Component
+class DocsTOC extends FlawedComponent {
+  // Giving Name To Component
+  constructor() {
+    super({
+      name: "DocsTOC",
+    });
+  }
 
-  // Hero Component 
-  class DocsTOC extends FlawedComponent {
-      // Giving Name To Component
-      constructor() {
-          super({
-              name: 'DocsTOC'
-          });
-      };
-  
-      // Component Content 
-      view() {
-          return (
-              `
+  // Component Content
+  view() {
+    return `
               <br><br>
                 <div class="docsTOC">
                 
@@ -33,15 +31,13 @@
                     <a class="active" href="#UseComponent">UseComponent</a>
                     <hr>
 
-                    <h5>Guide</h5>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
+                    <h5>More</h5>
+                    <a href="#StructuredFlawdedSite" class="active">Structured Flawed Site</a>
                 </details>
                 </div>
-              `
-          );
-      };
-  };
-  
-  // exporting 
-  module.exports = DocsTOC;
+              `;
+  }
+}
+
+// exporting
+module.exports = DocsTOC;
